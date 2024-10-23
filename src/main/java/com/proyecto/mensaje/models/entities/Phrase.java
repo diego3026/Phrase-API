@@ -22,4 +22,10 @@ public class Phrase {
 
     @Column(nullable = false)
     private String author;
+
+    public void updatePhrase(Phrase phrase){
+        this.setId(this.id);
+        this.setPhrase(phrase.getPhrase());
+        this.setAuthor(phrase.getAuthor());
+    }
 }
