@@ -3,12 +3,12 @@ spring:
     name: api
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: 1234
+    url: ${DATABASE_URL_DEVELOPMENT}
+    username: ${DATABASE_URL_USERNAME}
+    password: ${DATABASE_URL_PASSWORD}
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
     properties:
       hibernate:
