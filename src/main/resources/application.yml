@@ -21,7 +21,7 @@ logging:
     org.hibernate: debug
 
 server:
-  port: 9191
+  port: 8080
 
 springdoc:
   swagger-ui:
